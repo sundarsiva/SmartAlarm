@@ -5,11 +5,11 @@ package com.sundarsiva.smartalarm.puzzles;
  */
 public class PuzzleValidator {
 
-    public boolean isValidAnswer(PuzzleAndAnswer puzzleAndAnswer, Answer answer) {
+    public boolean isValidAnswer(Puzzle puzzle, String answer) {
         if(answer == null) {
             return false;
         }
-        if(puzzleAndAnswer.getAnswer().getAnswer().equalsIgnoreCase(answer.getAnswer())){
+        if(puzzle.getAnswer().equalsIgnoreCase(answer)){
             return true;
         } else {
             return false;
