@@ -5,7 +5,7 @@ package com.sundarsiva.smartalarm.puzzles;
  */
 public class PuzzleValidator {
 
-    public boolean isValidAnswer(Puzzle puzzle, String answer) {
+    public static boolean isValidAnswer(Puzzle puzzle, String answer) {
         if(answer == null) {
             return false;
         }

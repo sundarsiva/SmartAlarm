@@ -7,9 +7,15 @@ import android.content.Context;
  */
 public class PuzzleGenerator {
 
-    public String generateMathPuzzle(Context context){
+    private static PuzzleGenerator instance = new PuzzleGenerator();
+
+    public static PuzzleGenerator getInstance(){
+        return instance;
+    }
+
+    public Puzzle generateMathPuzzle(Context context){
         Puzzle puzzle = new MathPuzzle(context);
-        return puzzle.generatePuzzle();
+        return puzzle;
     }
 
 

@@ -10,6 +10,17 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    sourceSets {
+        //instrumentTest.setRoot('src/tests')
+        instrumentTest {
+            java.srcDirs = ['src/tests/src']
+            manifest.srcFile file('src/tests/AndroidManifest.xml')
+            resources.srcDirs = ['src/tests/src']
+            res.srcDirs = ['src/tests/res']
+        }
+    }
+
     buildTypes {
         release {
             runProguard false

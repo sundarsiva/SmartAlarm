@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class MathPuzzle implements Puzzle {
 
-    enum Operator {
+    public enum Operator {
         ADD,
         SUBTRACT,
         MULTIPLY;
